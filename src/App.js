@@ -1,9 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Home from './home';
+import Header from './header';
 
 function App() {
   return (
-  <div>Airbnb</div>
+  <div className="app">
+  
+   <Header/>
+    <Home/>
+   
+  
+    </div>
+
   );
 }
 
