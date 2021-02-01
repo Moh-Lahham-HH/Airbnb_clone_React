@@ -16,13 +16,13 @@ class Header extends Component {
                </div>
 
            
-               <div className='header__right'>
+              <div className='header__right'>
                 <p>Become a host</p>
                 <LanguageIcon />
                 <ExpandMoreIcon />
                 <PersonIcon />
             
-              </div>
+            </div>
         </div>
         );
     }
