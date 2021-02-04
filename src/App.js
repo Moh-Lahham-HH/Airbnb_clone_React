@@ -3,14 +3,39 @@ import './App.css';
 import Home from './home';
 import Header from './header';
 import Footer from "./footer";
+import SearchPage from "./searchPage";
+import {BrowserRouter as Router,Switch,Route } from "react-router-dom";
+    
+
+
 
 function App() {
   return (
   <div className="app">
+  <Router>
+     <Header/>
+     <Switch>
   
-   <Header/>
-    <Home/>
-    <Footer/>
+    
+        < Route path="/search">
+        
+        <SearchPage/>
+        </Route>
+
+        < Route path="/">
+        
+        <Home/>
+        </Route>
+     
+    
+    
+      
+       
+     </Switch>
+
+     <Footer/>
+  </Router>
+
    
   
     </div>
